@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Miguel</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="menu" id="menu">
+          <a href="#sobre">Sobre</a>
+          <a href="#recursos">Recursos</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+ 
+  <section class="hero">
+    <div class="container">
+      <h1>Bem-vindo à minha página</h1>
+      <p>Veja um pouco sobre mim.</p>
+      <button>Saiba Mais</button>
+    </div>
+  </section>
+ 
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre eu</h2>
+      <p>Sou um joven de 16 anos no segundo ano do ensino medio com um curso de ciensia de dados integrado .</p>
+    </div>
+  </section>
+ 
+  <section id="recursos">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <h3>html 1</h3>
+          <p>Ja fiz ums sites em html e estou estudando sobre.</p>
+        </div>
+        <div class="grid-item">
+          <h3>css 2</h3>
+          <p>Tenho certo conhesimento pos ja fiz algus sites que usei css.</p>
+        </div>
+        <div class="grid-item">
+          <h3>bigi data 3</h3>
+          <p>Ja fiz um mini banco de dadads e estou estudando sobre.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Email: Miguel@silva.com</p>
+      <p>Telefone: (67) 85925-3791</p>
+    </div>
+  </section>
+ 
+  <footer>
+    <p>&copy; 2025 MinhaMarca. Todos os direitos reservados.</p>
+  </footer>
+ 
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
